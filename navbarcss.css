@@ -1,0 +1,29 @@
+ul {
+    display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+  width: 40%;
+}
+
+ul li {
+  list-style: none;
+  padding-right: 6%;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Coluna Rounded', sans-serif;
+}
+
+nav { 
+  display: flex;
+  justify-content: space-between;
+  background-color: #b20202;
+  align-items: center;
+}
+
+.navLogo {
+  height: 70px;
+}
