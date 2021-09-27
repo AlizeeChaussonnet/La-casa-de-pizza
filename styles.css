@@ -1,0 +1,28 @@
+h2 {
+    font-family: 'Coluna Rounded', sans-serif;
+}
+
+body {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+footer {
+    background-color: #b20201;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mentions-legales {
+}
+
+#logofooter {
+    margin-top: 37px;
+    margin-left: 48px;
+}
