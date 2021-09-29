@@ -12,6 +12,95 @@ p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .flex-container div {
+    margin: 25px 0;
+  }
+  
+  .flex-container div section {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border: solid 1px red;
+  }
+  
+  /* Carte Pizzas*/
+  
+  #Professeur {
+    background-image: url("src/Professeur.jpg");
+    
+  }
+  
+  #Tokyo {
+    background-image: url("src/Tokyo.jpg");
+    
+  }
+
+  #Lisbonne {
+    background-image: url("src/Lisbonne.jpg");
+  
+  }
+
+  #Berlin {
+    background-image: url("src/Berlin.jpg");
+  
+  }
+
+  #Rio {
+    background-image: url("src/Rio.jpg");
+    
+  }
+
+  #Nairobi {
+    background-image: url("src/Nairobi.jpg");
+    
+  }
+
+  #Denver {
+    background-image: url("src/Denver.jpg");
+    
+  }
+
+  #Moscou {
+    background-image: url("src/Moscou.jpg");
+    
+  }
+
+  #Helsinki {
+    background-image: url("src/Helsinki.jpg");
+    
+  }
+
+  #Stockholm {
+    background-image: url("src/Stockholm.jpg");
+    
+  }
+
+  #Palerme{
+    background-image: url("src/Palerme.jpg");
+    
+  }
+
+  #Bogota {
+    background-image: url("src/Bogota.jpg");
+    
+  }
+
+
 footer {
     background-color: #b20201;
     color: white;
