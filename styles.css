@@ -243,7 +243,7 @@ hr{
 #conteneur-image {
     background-size: 100%;
     height: 400px;
-     background-image: url('src/pizza-image.jpg');
+     background-image: url("src/pizza-image.jpg");
      display: flex;
      align-items: center;
      justify-content: center;
@@ -375,21 +375,7 @@ hr{
   }
 
 }
-#mapForm {
-  display: flex;
-  margin-left: 16px;
-  margin-right: 16px;
-  justify-content: space-between;
-}
-#contactForm {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  font-family: "Lato", sans-serif;
-  padding-left: 20px;
-}
 
-<<<<<<< HEAD
 #container_extra{
     display: flex;
     justify-content: center;
@@ -413,8 +399,20 @@ hr{
     width: 300px;  
 }
 
+#mapForm {
+  display: flex;
+  margin-left: 16px;
+  margin-right: 16px;
+  justify-content: space-between;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-family: "Lato", sans-serif;
+  padding-left: 20px;
+}
 
-=======
 input {
   width: 60%;
   font-family: "Lato", sans-serif;
@@ -432,7 +430,7 @@ textarea {
   font-family: "Lato", sans-serif;
 
 }
->>>>>>> develop
+
 footer {
     background-color: #b20201;
     color: white;
