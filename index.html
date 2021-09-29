@@ -1,64 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://www.cdnfonts.com/coluna-rounded.font">
     <link href="styles.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">  
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link href="http://fonts.cdnfonts.com/css/coluna-rounded" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet">
-   <title>LA CASA DE PIZZA</title>
+<title>LA CASA DE PIZZA</title>
 </head>
+    
 <body>
-    <section id="mapForm">
-        <div id="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0613629677364!2d-0.5613814844633095!3d44.840683679098554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de577d073%3A0x17a273425b1e48b9!2sPl.%20de%20Stalingrad%2C%2033100%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1632901047191!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="container_history">
+        <div class="history_text">
+            <h2>Pizzeria italienne traditionnel depuis 1999</h2>
+            <p>La casa de pizza est l'un des plus anciens restaurants italiens de Bordeaux Bastide, créé en 1999.</p>
+            <p>Notre credo : vous proposer des pizzas typiquement italiennes à partir de produits frais et de qualité
+                tout au long de l'année.</p>
+            <p>Notre objectif : vous proposer un voyage à travers la gastronomie italiennes. Nos chefs expérimentés et
+                four au feu de bois rendront cette expérience unique.</p>
         </div>
-        
-        <form id="contactForm" method="post" action="" >
-            <h2>Contactez nous</h2>
-            <label for="name">Nom:</label>
-            <input type="text" id="lastName" name="lastName" value="" />
-            <label for="name">Prénom:</label>
-            <input type="text" id="firstName" name="firstName" value="" />
-            <label for="">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value="">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <input id="button" type="submit" value="Submit" />
-          </form>
-      
+        <div class="history_img">
+            <img src="src/pizzaHistory.jpg" alt="Pizza maison">
+        </div>
     </section>
-<footer>
-    <div id="mentions-legales">
-        <img id="logofooter" src="https://i.ibb.co/Z6w3Qy9/logo.jpg" alt="Logo de la casa de pizza"/>
-        <p>Mentions légales | Politique de confidentialité</p>
-    </div>
-    <div id="adresse">
-        <h3>ADRESSE</h3>
+    <div class="main-container">
+
+      <h1>Carte</h1>
+      <h2>Les PIZZAS CLASSIQUES</h2>
+
+      <div class="flex-container">
+        <div>
+          <section id="Professeur">
+            <h3>Professeur</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Tokyo">
+            <h3>Tokyo</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Lisbonne">
+            <h3>Lisbonne</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Berlin">
+            <h3>Berlin</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Rio">
+            <h3>Rio</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Nairobi">
+            <h3>Nairobi</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+      </div>
+
+      <h2>Les PIZZAS SIGNATURES</h2>
+
+      <div class="flex-container">
+
+        <div>
+          <section id="Denver">
+            <h3>Denver</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Moscou">
+            <h3>Moscou</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Helsinki">
+            <h3>Helsinki</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Stockholm">
+            <h3>Stockholm</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Palerme">
+            <h3>Palerme</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+        <div>
+          <section id="Bogota">
+            <h3>Bogota</h3>
+            <p>Les ingrédients</p>
+          </section>
+        </div>
+
+      </div>
+<section id="mapForm">
+  <div id="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0613629677364!2d-0.5613814844633095!3d44.840683679098554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de577d073%3A0x17a273425b1e48b9!2sPl.%20de%20Stalingrad%2C%2033100%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1632901047191!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  
+  <form id="contactForm" method="post" action="" >
+      <h2>Contactez nous</h2>
+      <label for="name">Nom:</label>
+      <input type="text" id="lastName" name="lastName" value="" />
+      <label for="name">Prénom:</label>
+      <input type="text" id="firstName" name="firstName" value="" />
+      <label for="">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <input id="button" type="submit" value="Submit" />
+    </form>
+
+</section>
+    <footer>
+        <div id="mentions-legales">
+            <img id="logofooter" src="https://i.ibb.co/Z6w3Qy9/logo.jpg" alt="Logo de la casa de pizza" />
+            <p>Mentions légales | Politique de confidentialité</p>
+        </div>
+        <div id="adresse">
+            <h3>ADRESSE</h3>
             <p>3, Place Stalingrad</p>
             <p>33100 Bordeaux Bastide</p>
             <p>Arrêt TRAM A Stalingrad</p>
             <p>Téléphone : 05 56 32 28 44</p>
-    </div>
-    <div id="horaires">
-        <h3>HORAIRES</h3>   
-        <p>Durant le couvre-feu vous pouvez commander :</p>
-        <p>Lundi au Vendredi : 11h15 - 14h00 / 17h15 - 20h30.</p>
-        <p>Samedi : 17h15 - 20h30.</p>
-        <p>Du lundi au samedi nous vous livrons entre 19h30 et 21h00.</p>
-    </div>
-</footer> 
-<script type="text/javascript" src="index.js"></script>
+        </div>
+        <div id="horaires">
+            <h3>HORAIRES</h3>
+            <p>Durant le couvre-feu vous pouvez commander :</p>
+            <p>Lundi au Vendredi : 11h15 - 14h00 / 17h15 - 20h30.</p>
+            <p>Samedi : 17h15 - 20h30.</p>
+            <p>Du lundi au samedi nous vous livrons entre 19h30 et 21h00.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>
+
