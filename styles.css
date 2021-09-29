@@ -1,3 +1,4 @@
+  
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ h2 {
 
 h3{
     font-family: 'Coluna Rounded', sans-serif;
+    color: #b20201;
 }
 
 body {
@@ -53,20 +55,6 @@ p {
 }
 
 
-@media screen and (max-width : 460px) {
-    #container_history{
-        flex-wrap: wrap;
-    }
-    .history_text h2, p{
-        width: 310px;
-    }
-    #container_history div img{
-        width: 310px;
-        height: 350px;
-        margin: 50px 0;
-    }
-    
-}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -90,7 +78,11 @@ p {
   width: 300px;
   background-size: cover;
   background-position: center;
-  border: solid 1px red;
+  
+}
+
+.flex-container div section h3{
+  font-size: 1.7em;
 }
 
 /* Carte Pizzas*/
@@ -98,17 +90,17 @@ p {
 #Professeur {
   background-image: url("src/Professeur.jpg");
   
-}
+}  
 
 #Tokyo {
   background-image: url("src/Tokyo.jpg");
   
-}
+  }
 
 #Lisbonne {
   background-image: url("src/Lisbonne.jpg");
 
-}
+  }
 
 #Berlin {
   background-image: url("src/Berlin.jpg");
@@ -118,41 +110,43 @@ p {
 #Rio {
   background-image: url("src/Rio.jpg");
   
-}
+  }
 
 #Nairobi {
   background-image: url("src/Nairobi.jpg");
   
-}
+  }
 
 #Denver {
   background-image: url("src/Denver.jpg");
   
-}
+  }
 
 #Moscou {
   background-image: url("src/Moscou.jpg");
   
-}
+  }
 
 #Helsinki {
   background-image: url("src/Helsinki.jpg");
   
-}
+  }
 
 #Stockholm {
   background-image: url("src/Stockholm.jpg");
   
-}
+  }
 
 #Palerme{
   background-image: url("src/Palerme.jpg");
   
-}
+  }
 
 #Bogota {
   background-image: url("src/Bogota.jpg");
   
+  }
+
 }
 
 footer {
@@ -168,4 +162,27 @@ footer {
 #logofooter {
     margin-top: 37px;
     margin-left: 48px;
+}
+
+@media screen and (max-width : 460px) {
+  #container_history{
+      flex-wrap: wrap;
+  }
+  .history_text h2, p{
+      width: 310px;
+  }
+  #container_history div img{
+      width: 310px;
+      height: 350px;
+      margin: 50px 0;
+  }
+  .main-container {
+    flex-direction: column;
+    
+  }
+  .flex-container {
+    flex-direction: column;
+    width: 460px;
+  }
+
 }
