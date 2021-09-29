@@ -1,10 +1,15 @@
-h2 {
+
+* {
+    margin = 0;
+}
+
+h2, h3 {
     font-family: 'Coluna Rounded', sans-serif;
 }
 
 body {
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 p {
@@ -19,10 +24,39 @@ footer {
     justify-content: space-around;
 }
 
-#mentions-legales {
-}
 
 #logofooter {
     margin-top: 37px;
     margin-left: 48px;
+}
+
+#mapForm {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+    justify-content: space-between;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: "Lato", sans-serif;
+    padding-left: 20px;
+}
+
+input {
+    width: 60%;
+    font-family: "Lato", sans-serif;
+}
+
+#button {
+    width: 80px;
+    color: black;
+    font-family: "Lato", sans-serif;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 50px;
+    font-family: "Lato", sans-serif;
 }
