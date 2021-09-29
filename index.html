@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://www.cdnfonts.com/coluna-rounded.font">
     <link href="styles.css" rel="stylesheet">
+    <script src="index.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,14 +19,42 @@
 </head>
     
 <body>
-    <section id="container_history">
+  <div id="root">
+    <div id="topnav" class="topnav">
+      <img class="navLogo" src="logo-fond-noir.jpg"/> 
+  
+    
+      <nav role="navigation" id="topnav_menu">
+        <a class="topnav_link" href="/about">Notre restaurant</a>
+        <a class="topnav_link" href="/contact-us">Carte</a>
+        <a class="topnav_link" href="#contact">Contact</a></li>
+      </nav>
+  
+      <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+  
+     
+      <nav role="navigation" id="topnav_responsive_menu">
+        <ul>
+          <li><a href="/about">Notre restaurant</a></li>
+          <li><a href="/contact-us">Carte</a></li>
+          <li><a href="/privacy-policy">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+ 
+  <section id="container_history">
         <div class="history_text">
-            <h2>Pizzeria italienne traditionnel depuis 1999</h2>
-            <p>La casa de pizza est l'un des plus anciens restaurants italiens de Bordeaux Bastide, créé en 1999.</p>
+            <h2>Pizzeria italienne traditionnelle depuis 1999</h2>
+            <p>La Casa de Pizza est l'un des plus anciens restaurants italiens de Bordeaux Bastide, créé en 1999.</p>
             <p>Notre credo : vous proposer des pizzas typiquement italiennes à partir de produits frais et de qualité
                 tout au long de l'année.</p>
-            <p>Notre objectif : vous proposer un voyage à travers la gastronomie italiennes. Nos chefs expérimentés et
-                four au feu de bois rendront cette expérience unique.</p>
+            <p>Notre objectif : vous proposer un voyage à travers la gastronomie italienne. Nos chefs expérimentés et leurs
+                fours au feu de bois rendront cette expérience unique.</p>
         </div>
         <div class="history_img">
             <img src="src/pizzaHistory.jpg" alt="Pizza maison">
