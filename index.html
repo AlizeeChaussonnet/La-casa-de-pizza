@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://www.cdnfonts.com/coluna-rounded.font">
     <link href="styles.css" rel="stylesheet">
+    <script src="index.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,17 +18,49 @@
 </head>
 
 <body>
+    <div id="root">
+        <div id="topnav" class="topnav">
+            <img class="navLogo" src="logo-fond-noir.jpg" />
+
+
+            <nav role="navigation" id="topnav_menu">
+                <a class="topnav_link" href="/about">Notre restaurant</a>
+                <a class="topnav_link" href="/contact-us">Carte</a>
+                <a class="topnav_link" href="#contact">Contact</a></li>
+            </nav>
+
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+
+            <nav role="navigation" id="topnav_responsive_menu">
+                <ul>
+                    <li><a href="/about">Notre restaurant</a></li>
+                    <li><a href="/contact-us">Carte</a></li>
+                    <li><a href="/privacy-policy">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
     <div id="conteneur-image">
-        <hr><h1>LA CASA <strong>DE</strong> PIZZA</h1><hr>
-   </div>
+        <hr>
+        <h1>LA CASA <strong>DE</strong> PIZZA</h1>
+        <hr>
+    </div>
+
     <section id="container_history">
         <div class="history_text">
-            <h2>Pizzeria italienne traditionnel depuis 1999</h2>
-            <p>La casa de pizza est l'un des plus anciens restaurants italiens de Bordeaux Bastide, créé en 1999.</p>
+            <h2>Pizzeria italienne traditionnelle depuis 1999</h2>
+            <p>La Casa de Pizza est l'un des plus anciens restaurants italiens de Bordeaux Bastide, créé en 1999.</p>
             <p>Notre credo : vous proposer des pizzas typiquement italiennes à partir de produits frais et de qualité
                 tout au long de l'année.</p>
-            <p>Notre objectif : vous proposer un voyage à travers la gastronomie italiennes. Nos chefs expérimentés et
-                four au feu de bois rendront cette expérience unique.</p>
+            <p>Notre objectif : vous proposer un voyage à travers la gastronomie italienne. Nos chefs expérimentés et
+                leurs
+                fours au feu de bois rendront cette expérience unique.</p>
         </div>
         <div class="history_img">
             <img src="src/pizzaHistory.jpg" alt="Pizza maison">
@@ -36,100 +69,99 @@
     <div class="main-container">
 
         <h2>Carte</h2>
-        <h2>Les PIZZAS CLASSIQUES</h2>
+            <h2>NOS PIZZAS CLASSIQUES</h2>
 
-        <div class="flex-container">
-            <div>
-                <section id="Professeur">
-                    <h3>Professeur</h3>
-                    <p>Les ingrédients</p>
-                </section>
+            <div class="flex-container">
+                <div>
+                    <section id="Professeur">
+                        <h3>Professeur</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Tokyo">
+                        <h3>Tokyo</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Lisbonne">
+                        <h3>Lisbonne</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Berlin">
+                        <h3>Berlin</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Rio">
+                        <h3>Rio</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Nairobi">
+                        <h3>Nairobi</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
             </div>
 
-            <div>
-                <section id="Tokyo">
-                    <h3>Tokyo</h3>
-                    <p>Les ingrédients</p>
-                </section>
+            <h2>NOS PIZZAS SIGNATURES</h2>
+
+            <div class="flex-container">
+
+                <div>
+                    <section id="Denver">
+                        <h3>Denver</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Moscou">
+                        <h3>Moscou</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Helsinki">
+                        <h3>Helsinki</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Stockholm">
+                        <h3>Stockholm</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Palerme">
+                        <h3>Palerme</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="Bogota">
+                        <h3>Bogota</h3>
+                        <p>Les ingrédients</p>
+                    </section>
+                </div>
             </div>
-
-            <div>
-                <section id="Lisbonne">
-                    <h3>Lisbonne</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Berlin">
-                    <h3>Berlin</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Rio">
-                    <h3>Rio</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Nairobi">
-                    <h3>Nairobi</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-        </div>
-
-        <h2>Les PIZZAS SIGNATURES</h2>
-
-        <div class="flex-container">
-
-            <div>
-                <section id="Denver">
-                    <h3>Denver</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Moscou">
-                    <h3>Moscou</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Helsinki">
-                    <h3>Helsinki</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Stockholm">
-                    <h3>Stockholm</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Palerme">
-                    <h3>Palerme</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-            <div>
-                <section id="Bogota">
-                    <h3>Bogota</h3>
-                    <p>Les ingrédients</p>
-                </section>
-            </div>
-
-        </div>
     </div>
     <div id="container_extra">
         <div>
@@ -165,7 +197,29 @@
                 <li>Eclair au chocolat</li>
             </ul>
         </div>
+
     </div>
+
+    <section id="mapForm">
+        <div id="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0613629677364!2d-0.5613814844633095!3d44.840683679098554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de577d073%3A0x17a273425b1e48b9!2sPl.%20de%20Stalingrad%2C%2033100%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1632901047191!5m2!1sfr!2sfr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <form id="contactForm" method="post" action="">
+            <h2>Contactez nous</h2>
+            <label for="name">Nom:</label>
+            <input type="text" id="lastName" name="lastName" value="" />
+            <label for="name">Prénom:</label>
+            <input type="text" id="firstName" name="firstName" value="" />
+            <label for="">Email:</label>
+            <input type="email" id="email" name="email" value="">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input id="button" type="submit" value="Submit" />
+        </form>
+    </section>
     <footer>
         <div id="mentions-legales">
             <img id="logofooter" src="https://i.ibb.co/Z6w3Qy9/logo.jpg" alt="Logo de la casa de pizza" />
