@@ -4,6 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+
+    background-color: #111214;
+}
+h1 {
+  color: white;
+  font-family: 'Coluna Rounded', sans-serif;
+  font-size: 10em;
+}
 
 h2 {
     font-family: 'Coluna Rounded', sans-serif;
@@ -17,10 +26,7 @@ h3{
     color: #b20201;
 }
 
-body {
 
-    background-color: #111214;
-}
 
 p, li {
     font-family: "Lato", sans-serif;
@@ -33,11 +39,6 @@ strong {
     background-color: #b20201;
     font-size: .8em;
     font-family: 'Coluna Rounded', sans-serif;
-}
-h1 {
-    color: white;
-    font-family: 'Coluna Rounded', sans-serif;
-    font-size: 10em;
 }
 
 hr{
@@ -84,6 +85,8 @@ hr{
 #topnav_responsive_menu {
   display: none;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   /* hide classic menu */
@@ -272,9 +275,12 @@ hr{
     
 }
 
-.history_text h2, p{
+.text {
     width: 600px;
 }
+/*.history_text h2, p{
+    width: 600px;
+}*/
 
 #container_history div img{
     width: 400px;
@@ -401,8 +407,8 @@ hr{
 
 #mapForm {
   display: flex;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 80px;
+  margin-right: 20px;
   justify-content: space-between;
 }
 #contactForm {
@@ -417,6 +423,9 @@ input {
   width: 60%;
   font-family: "Lato", sans-serif;
 }
+label {
+  color : white;
+}
 
 #button {
   width: 80px;
@@ -428,6 +437,7 @@ input {
 textarea {
   height: 50px;
   font-family: "Lato", sans-serif;
+  width: 80%;
 
 }
 
