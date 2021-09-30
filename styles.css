@@ -16,7 +16,7 @@ h1 {
 
 h2 {
     font-family: 'Coluna Rounded', sans-serif;
-    margin: 10px 0;
+    margin-top: 40px;
     color: #b20201;
     font-size : 2em
 }
@@ -24,6 +24,11 @@ h2 {
 h3{
     font-family: 'Coluna Rounded', sans-serif;
     color: #b20201;
+}
+h4 {
+  font-family: 'Coluna Rounded', sans-serif;
+  color: #b20201;
+  font-size: 2.5em;
 }
 
 
@@ -60,7 +65,7 @@ hr{
   justify-content: space-between;
   font-family: 'Coluna Rounded', sans-serif;
   font-size: 25px;
-  
+  z-index: 999;
 }
 
 #topnav_menu {
@@ -297,7 +302,7 @@ hr{
 
 .flex-container {
   display: flex;
-  width: 1000px;
+  width: 80%;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -306,7 +311,7 @@ hr{
   margin: 25px 0;
 }
 
-.flex-container div section {
+.flex-container div  {
   height: 300px;
   width: 300px;
   background-size: cover;
@@ -318,67 +323,43 @@ hr{
   font-size: 1.7em;
 }
 
-/* Carte Pizzas*/
-
-#Professeur {
-  background-image: url("src/Professeur.jpg");
-  
-}  
-
-#Tokyo {
-  background-image: url("src/Tokyo.jpg");
-  
-  }
-
-#Lisbonne {
-  background-image: url("src/Lisbonne.jpg");
-
-  }
-
-#Berlin {
-  background-image: url("src/Berlin.jpg");
-
+.legende
+{
+  position: relative;
+  bottom: 329px;
+  width: 300px;
+  /*background-color: rgba(139, 137, 137, 0.8);*/
+  background-color: rgba(121, 120, 120, 0.61);
+  visibility: hidden;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#Rio {
-  background-image: url("src/Rio.jpg");
-  
-  }
+.conteneurs:hover .legende
+{
+	visibility: visible;
+}
 
-#Nairobi {
-  background-image: url("src/Nairobi.jpg");
-  
-  }
+.ingredients {
+  font-size: 1.3em;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+}
+.listeingredients {
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+  padding-left: 10px;
+}
+/* Carte Pizzas*/
+.photoPizza {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
 
-#Denver {
-  background-image: url("src/Denver.jpg");
-  
-  }
-
-#Moscou {
-  background-image: url("src/Moscou.jpg");
-  
-  }
-
-#Helsinki {
-  background-image: url("src/Helsinki.jpg");
-  
-  }
-
-#Stockholm {
-  background-image: url("src/Stockholm.jpg");
-  
-  }
-
-#Palerme{
-  background-image: url("src/Palerme.jpg");
-  
-  }
-
-#Bogota {
-  background-image: url("src/Bogota.jpg");
-  
-  }
 
 
 
@@ -403,6 +384,16 @@ hr{
     flex-direction: column;
     align-items: center;
     width: 300px;  
+}
+
+#container-boissons {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#vins {
+  justify-content: space-around;
 }
 
 #mapForm {
@@ -446,6 +437,7 @@ footer {
     color: white;
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 
