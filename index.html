@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://www.cdnfonts.com/coluna-rounded.font">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180"
-            href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32"
-            href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16"
-            href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link href="http://fonts.cdnfonts.com/css/coluna-rounded"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-            rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.cdnfonts.com/coluna-rounded.font">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="http://fonts.cdnfonts.com/css/coluna-rounded" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-        <title>LA CASA DE PIZZA</title>
-    </head>
+    <title>LA CASA DE PIZZA</title>
+</head>
 
-    <body>
-        <div id="root">
-            <div id="topnav" class="topnav">
-                <img class="navLogo" src="logo-fond-noir.jpg" />
+<body>
+    <div id="root">
+        <div id="topnav" class="topnav">
+            <img class="navLogo" src="logo-fond-noir.jpg" />
 
 
-                <nav role="navigation" id="topnav_menu">
-                    <a class="topnav_link" href="#container_history">Notre restaurant</a>
-                    <a class="topnav_link" href="#menu">Carte</a>
-                    <a class="topnav_link" href="#contactForm">Contact</a>
+            <nav role="navigation" id="topnav_menu">
+                <a class="topnav_link" href="/about">Notre restaurant</a>
+                <a class="topnav_link" href="/contact-us">Carte</a>
+                <a class="topnav_link" href="#contact">Contact</a>
             </nav>
 
-            <a id="topnav_hamburger_icon" href="javascript:void(0);"
-                onclick="showResponsiveMenu()">
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,9 +37,9 @@
 
             <nav role="navigation" id="topnav_responsive_menu">
                 <ul>
-                    <li><a href="#container_history">Notre restaurant</a></li>
-                    <li><a href="#menu">Carte</a></li>
-                    <li><a href="#contactForm">Contact</a></li>
+                    <li><a href="/about">Notre restaurant</a></li>
+                    <li><a href="/contact-us">Carte</a></li>
+                    <li><a href="/privacy-policy">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -75,8 +69,12 @@
         </div>
     </section>
     <div class="main-container">
-
-        <h2 id="menu">Carte</h2>
+        <div class="title_menu">
+            <hr>
+            <h2>Carte</h2>
+            <hr>
+        </div>
+        
         <h2>NOS PIZZAS CLASSIQUES</h2>
 
         <div class="flex-container">
@@ -153,88 +151,87 @@
                     </div>
                 </div>
             </div>
-           </div>
-            <h2>NOS PIZZAS SIGNATURES</h2>
-            <!--Denver, Moscou, Stockholm, helsinki, palerme, Bogota-->
-            <div class="flex-container">
-                <div class="conteneurs">
-                    <div id="Denver">
-                        <img class="photoPizza" src="src/Denver.jpg"
-                            alt="photo
+        </div>
+        <h2>NOS PIZZAS SIGNATURES</h2>
+        <!--Denver, Moscou, Stockholm, helsinki, palerme, Bogota-->
+        <div class="flex-container">
+            <div class="conteneurs">
+                <div id="Denver">
+                    <img class="photoPizza" src="src/Denver.jpg" alt="photo
                             de la pizza Denver">
-                        <div class="legende">
-                            <h4>DENVER</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Moscou">
-                        <img class="photoPizza" src="src/Moscou.jpg" alt="photo
-                            de la pizza Moscou">
-                        <div class="legende">
-                            <h4>MOSCOU</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                jambon, sauce piquante, merguez.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Stockholm">
-                        <img class="photoPizza" src="src/Stockholm.jpg"
-                            alt="photo
-                            de la pizza Stockholm">
-                        <div class="legende">
-                            <h4>STOCKHOLM</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Palerme">
-                        <img class="photoPizza" src="src/Palerme.jpg" alt="photo
-                            de la pizza Palerme">
-                        <div class="legende">
-                            <h4>PALERME</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Bogota">
-                        <img class="photoPizza" src="src/Bogota.jpg" alt="photo
-                            de la pizza Bogota">
-                        <div class="legende">
-                            <h4>BOGOTA</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, poulet, ananas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Helsinki">
-                        <img class="photoPizza" src="src/Helsinki.jpg" alt="photo
-                            de la pizza Helsinki">
-                        <div class="legende">
-                            <h4>HELSINKI</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, sauce piquante, lait de coco,
-                                poulet.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>DENVER</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, roquette.</p>
                     </div>
                 </div>
             </div>
-            <div id="container-boissons" >
-                <div id="vins">
+            <div class="conteneurs">
+                <div id="Moscou">
+                    <img class="photoPizza" src="src/Moscou.jpg" alt="photo
+                            de la pizza Moscou">
+                    <div class="legende">
+                        <h4>MOSCOU</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            jambon, sauce piquante, merguez.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Stockholm">
+                    <img class="photoPizza" src="src/Stockholm.jpg" alt="photo
+                            de la pizza Stockholm">
+                    <div class="legende">
+                        <h4>STOCKHOLM</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, roquette.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Palerme">
+                    <img class="photoPizza" src="src/Palerme.jpg" alt="photo
+                            de la pizza Palerme">
+                    <div class="legende">
+                        <h4>PALERME</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, roquette.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Bogota">
+                    <img class="photoPizza" src="src/Bogota.jpg" alt="photo
+                            de la pizza Bogota">
+                    <div class="legende">
+                        <h4>BOGOTA</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, poulet, ananas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Helsinki">
+                    <img class="photoPizza" src="src/Helsinki.jpg" alt="photo
+                            de la pizza Helsinki">
+                    <div class="legende">
+                        <h4>HELSINKI</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, sauce piquante, lait de coco,
+                            poulet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="container_boissons">
+            <div id="vins">
                 <h2>Nos vins :</h2>
                 <ul>
                     <li>Bardolino rosé 75cl</li>
@@ -244,9 +241,9 @@
                     <li>Chianti (rouge) 37,5cl</li>
                     <li>Ambrusco Regiano Roso 20cl</li>
                 </ul>
-                </div>  
-           
-                <div id="boissons">
+            </div>
+
+            <div id="boissons">
                 <h2>Nos boissons :</h2>
                 <ul>
                     <li>Soda 33cl</li>
@@ -256,8 +253,8 @@
                     <li>Thés artisanales ABBONDIO 27,5cl</li>
                     <li>Café</li>
                 </ul>
-                </div>
-                <div id="desserts">
+            </div>
+            <div id="desserts">
                 <h2>Nos desserts :</h2>
                 <ul>
                     <li>Tiramisu traditionnel</li>
@@ -267,16 +264,15 @@
                     <li>Panna Cotta - Caramel</li>
                     <li>Eclair au chocolat</li>
                 </ul>
-                </div>
             </div>
+        </div>
 
 
         <section id="mapForm">
             <div id="maps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0613629677364!2d-0.5613814844633095!3d44.840683679098554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de577d073%3A0x17a273425b1e48b9!2sPl.%20de%20Stalingrad%2C%2033100%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1632901047191!5m2!1sfr!2sfr"
-                    width="400" height="300" style="border:0;"
-                    allowfullscreen="" loading="lazy"></iframe>
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <form id="contactForm" method="post" action="">
@@ -284,8 +280,7 @@
                 <label for="name">Nom:</label>
                 <input type="text" id="lastName" name="lastName" value="" />
                 <label for="name">Prénom:</label>
-                <input type="text" id="firstName" name="firstName" value=""
-                    />
+                <input type="text" id="firstName" name="firstName" value="" />
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" value="">
                 <label for="message">Message:</label>
@@ -295,8 +290,7 @@
         </section>
         <footer>
             <div id="mentions-legales">
-                <img id="logofooter" src="https://i.ibb.co/Z6w3Qy9/logo.jpg"
-                    alt="Logo de la casa de pizza" />
+                <img id="logofooter" src="https://i.ibb.co/Z6w3Qy9/logo.jpg" alt="Logo de la casa de pizza" />
                 <p>Mentions légales | Politique de confidentialité</p>
             </div>
             <div id="adresse">
@@ -316,6 +310,6 @@
             </div>
         </footer>
         <script type="text/javascript" src="index.js"></script>
-    </body>
+</body>
 
 </html>
