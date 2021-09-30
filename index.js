@@ -19,7 +19,7 @@ function showResponsiveMenu() {
   }
 }
 
-var contactForm = document.getElementById("contactForm")
+var contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", function (event) {
   event.preventDefault();
   contactForm.style.backgroundColor = "#111214";
