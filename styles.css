@@ -468,3 +468,52 @@ footer {
   }
 }
 
+/* New CSS */
+#selection-aleatoire {
+background-color: #b20202;
+  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#professeur-pizza {
+  font-family: 'Coluna Rounded', sans-serif;
+  font-size: 50px;
+}
+
+#button-professeur {
+  font-family: 'Coluna Rounded', sans-serif;
+  height: 30px;
+  font-size: 25px;
+  margin-top: 50 px;
+
+}
+
+#image-selection {
+
+  height: 300px;
+  width: 300px;
+  
+}
+#container-professeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#conteneur-prenom {
+  display: flex;
+  flex-direction: column;
+}
+
+#prenom {
+ /* background-color: black;*/
+    height: 60px;
+    width: 270px;
+    margin-bottom: 64px;
+    text-align: center;
+    font-family: 'Coluna Rounded', sans-serif;
+  font-size: 50px;
+    color: white;
+  
+}
