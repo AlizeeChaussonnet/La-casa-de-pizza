@@ -31,6 +31,7 @@ contactForm.addEventListener("submit", function (event) {
   contactForm.style.justifyContent = "center";
 });
 
+
 // Déclaration des constantes
 const professeur = document.querySelector("#image-selection");
 const button = document.querySelector("#button-professeur")
@@ -117,3 +118,17 @@ button.addEventListener('click', function(){
     200
   );
 });
+
+function scrollToForm() {
+  document.querySelector('#contactForm').scrollIntoView({behavior: 'smooth'});
+}
+
+function scrollToMenu() {
+  document.querySelector('#menu').scrollIntoView({behavior: 'smooth'});
+}
+
+function scrollToHistory() {
+  document.querySelector('#container_history').scrollIntoView({behavior: 'smooth'});
+}
+// 
+

@@ -18,6 +18,7 @@
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
             rel="stylesheet">
+
         <title>LA CASA DE PIZZA</title>
     </head>
 
@@ -26,10 +27,29 @@
             <div id="topnav" class="topnav">
                 <img class="navLogo" src="logo-fond-noir.jpg" />
                 <nav role="navigation" id="topnav_menu">
-                    <a class="topnav_link" href="/about">Notre histoire</a>
-                    <a class="topnav_link" href="/contact-us">Notre carte</a>
-                    <a class="topnav_link" href="#contact">Contact</a>
-                </nav>
+                    <a class="topnav_link" href="javascript: scrollToHistory();">Notre histoire</a>
+                    <a class="topnav_link" href="javascript: scrollToMenu();">Notre carte</a>
+                    <a class="topnav_link" href="javascript: scrollToForm();">Contact</a>
+                    
+            </nav>
+
+            <a id="topnav_hamburger_icon" href="javascript:void(0);"
+                onclick="showResponsiveMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <nav role="navigation" id="topnav_responsive_menu">
+                <ul>
+                    <li><a href="javascript: scrollToHistory();">Notre histoire</a></li>
+                    <li><a href="javascript: scrollToMenu();">Notre carte</a></li>li>
+                    <li><a href="javascript: scrollToForm();">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
 
                 <a id="topnav_hamburger_icon" href="javascript:void(0);"
                     onclick="showResponsiveMenu()">
