@@ -31,3 +31,15 @@ contactForm.addEventListener("submit", function (event) {
   contactForm.style.justifyContent = "center";
 });
 
+function scrollToForm() {
+  document.querySelector('#contactForm').scrollIntoView({behavior: 'smooth'});
+}
+
+function scrollToMenu() {
+  document.querySelector('#menu').scrollIntoView({behavior: 'smooth'});
+}
+
+function scrollToHistory() {
+  document.querySelector('#container_history').scrollIntoView({behavior: 'smooth'});
+}
+// 
