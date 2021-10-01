@@ -546,6 +546,21 @@ footer {
     width: 80%;
   }
 
+  #professeur-pizza{
+    text-align: center;
+  }
+
+  #container-professeur{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #prenom, #button-professeur, #professeur-pizza{
+    margin: 25px 0;
+  }
+
+
+
   #mapForm{
     justify-content: center;
   }

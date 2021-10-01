@@ -1,282 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
             maximum-scale=1">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180"
-            href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32"
-            href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16"
-            href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link href="http://fonts.cdnfonts.com/css/coluna-rounded"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-            rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="http://fonts.cdnfonts.com/css/coluna-rounded" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-        <title>LA CASA DE PIZZA</title>
-    </head>
+    <title>LA CASA DE PIZZA</title>
+</head>
 
-    <body>
-        <div id="root">
-            <div id="topnav" class="topnav">
-                <img class="navLogo" src="logo-fond-noir.jpg" />
-                <nav role="navigation" id="topnav_menu">
-                    <a class="topnav_link" href="javascript: scrollToHistory();">Notre histoire</a>
-                    <a class="topnav_link" href="javascript: scrollToMenu();">Notre carte</a>
-                    <a class="topnav_link" href="javascript: scrollToForm();">Contact</a>
-                    
+<body>
+    <div id="root">
+        <div id="topnav" class="topnav">
+            <img class="navLogo" src="logo-fond-noir.jpg" alt="Logo"/>
+            <nav id="topnav_menu">
+                <a class="topnav_link" href="javascript: scrollToHistory();">Notre histoire</a>
+                <a class="topnav_link" href="javascript: scrollToMenu();">Notre carte</a>
+                <a class="topnav_link" href="javascript: scrollToForm();">Contact</a>
+
             </nav>
 
-            <a id="topnav_hamburger_icon" href="javascript:void(0);"
-                onclick="showResponsiveMenu()">
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
 
-            <nav role="navigation" id="topnav_responsive_menu">
+            <nav id="topnav_responsive_menu">
                 <ul>
                     <li><a href="javascript: scrollToHistory();">Notre histoire</a></li>
-                    <li><a href="javascript: scrollToMenu();">Notre carte</a></li>li>
+                    <li><a href="javascript: scrollToMenu();">Notre carte</a></li>
                     <li><a href="javascript: scrollToForm();">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-
-
-                <a id="topnav_hamburger_icon" href="javascript:void(0);"
-                    onclick="showResponsiveMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-
-                <nav role="navigation" id="topnav_responsive_menu">
-                    <ul>
-                        <li><a href="/about">Notre histoire</a></li>
-                        <li><a href="/contact-us">Notre carte</a></li>
-                        <li><a href="/privacy-policy">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div id="conteneur-image">
-            <hr>
-            <h1>LA CASA <strong>DE</strong> PIZZA</h1>
-            <hr>
-        </div>
-        <section id="container_history">
-            <div class="history_text">
-                <div class="title_white">
-                    <hr>
-                    <h2>Notre histoire</h2>
-                    <hr>
-                </div>
-                <h3>Pizzeria italienne traditionnelle depuis 1999</h3>
-                <p class="text">La Casa de Pizza est l'un des plus anciens
-                    restaurants italiens de Bordeaux Bastide, créé en 1999.</p>
-                <p class="text">Notre credo : vous proposer des pizzas
-                    typiquement
-                    italiennes à partir de produits frais et de qualité
-                    tout au long de l'année.</p>
-                <p class="text">Notre objectif : vous proposer un voyage à
-                    travers
-                    la gastronomie italienne. Nos chefs expérimentés et
-                    leurs
-                    fours au feu de bois rendront cette expérience unique.</p>
-            </div>
-            <div class="history_img">
-                <img src="src/pizzaHistory.jpg" alt="Pizza maison">
-            </div>
-        </section>
-        <div class="main-container">
+    <div id="conteneur-image">
+        <hr>
+        <h1>LA CASA <strong>DE</strong> PIZZA</h1>
+        <hr>
+    </div>
+    <section id="container_history">
+        <div class="history_text">
             <div class="title_white">
                 <hr>
-                <h2 id="menu">Notre carte</h2>
+                <h2>Notre histoire</h2>
                 <hr>
             </div>
+            <h3>Pizzeria italienne traditionnelle depuis 1999</h3>
+            <p class="text">La Casa de Pizza est l'un des plus anciens
+                restaurants italiens de Bordeaux Bastide, créé en 1999.</p>
+            <p class="text">Notre credo : vous proposer des pizzas
+                typiquement
+                italiennes à partir de produits frais et de qualité
+                tout au long de l'année.</p>
+            <p class="text">Notre objectif : vous proposer un voyage à
+                travers
+                la gastronomie italienne. Nos chefs expérimentés et
+                leurs
+                fours au feu de bois rendront cette expérience unique.</p>
+        </div>
+        <div class="history_img">
+            <img src="src/pizzaHistory.jpg" alt="Pizza maison">
+        </div>
+    </section>
+    <div class="main-container">
+        <div class="title_white">
+            <hr>
+            <h2 id="menu">Notre carte</h2>
+            <hr>
+        </div>
 
-            <h2>NOS PIZZAS CLASSIQUES</h2>
-            <div class="flex-container">
-                <div class="conteneurs">
-                    <div id="Professeur">
-                        <img class="photoPizza" src="src/Professeur.jpg"
-                            alt="photo
+        <h2>NOS PIZZAS CLASSIQUES</h2>
+        <div class="flex-container">
+            <div class="conteneurs">
+                <div id="Professeur">
+                    <img class="photoPizza" src="src/Professeur.jpg" alt="photo
                             de la pizza Professeur">
-                        <div class="legende">
-                            <h4>PROFESSEUR</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate,
-                                mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Tokyo">
-                        <img class="photoPizza" src="src/Tokyo.jpg"
-                            alt="photo
-                            de la pizza Tokyo">
-                        <div class="legende">
-                            <h4>TOKYO</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate,
-                                mozarella,
-                                jambon, sauce piquante, merguez.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Lisbonne">
-                        <img class="photoPizza" src="src/Lisbonne.jpg"
-                            alt="photo
-                            de la pizza Lisbonne">
-                        <div class="legende">
-                            <h4>LISBONNE</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate,
-                                mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Berlin">
-                        <img class="photoPizza" src="src/Berlin.jpg"
-                            alt="photo
-                            de la pizza Berlin">
-                        <div class="legende">
-                            <h4>BERLIN</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate,
-                                mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Rio">
-                        <img class="photoPizza" src="src/Rio.jpg" alt="photo
-                            de la pizza Rio">
-                        <div class="legende">
-                            <h4>RIO</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate,
-                                mozarella,
-                                buratta, poulet, ananas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteneurs">
-                    <div id="Nairobi">
-                        <img class="photoPizza" src="src/Nairobi.jpg"
-                            alt="photo
-                            de la pizza Nairobi">
-                        <div class="legende">
-                            <h4>NAIROBI</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate,
-                                mozarella,
-                                buratta, speck, sauce piquante, lait de
-                                coco,
-                                poulet.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>PROFESSEUR</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate,
+                            mozarella,
+                            buratta, speck, roquette.</p>
                     </div>
                 </div>
             </div>
+            <div class="conteneurs">
+                <div id="Tokyo">
+                    <img class="photoPizza" src="src/Tokyo.jpg" alt="photo
+                            de la pizza Tokyo">
+                    <div class="legende">
+                        <h4>TOKYO</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate,
+                            mozarella,
+                            jambon, sauce piquante, merguez.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Lisbonne">
+                    <img class="photoPizza" src="src/Lisbonne.jpg" alt="photo
+                            de la pizza Lisbonne">
+                    <div class="legende">
+                        <h4>LISBONNE</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate,
+                            mozarella,
+                            buratta, speck, roquette.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Berlin">
+                    <img class="photoPizza" src="src/Berlin.jpg" alt="photo
+                            de la pizza Berlin">
+                    <div class="legende">
+                        <h4>BERLIN</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate,
+                            mozarella,
+                            buratta, speck, roquette.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Rio">
+                    <img class="photoPizza" src="src/Rio.jpg" alt="photo
+                            de la pizza Rio">
+                    <div class="legende">
+                        <h4>RIO</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate,
+                            mozarella,
+                            buratta, poulet, ananas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteneurs">
+                <div id="Nairobi">
+                    <img class="photoPizza" src="src/Nairobi.jpg" alt="photo
+                            de la pizza Nairobi">
+                    <div class="legende">
+                        <h4>NAIROBI</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate,
+                            mozarella,
+                            buratta, speck, sauce piquante, lait de
+                            coco,
+                            poulet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <h2>NOS PIZZAS SIGNATURES</h2>
-            <!--Denver, Moscou, Stockholm, helsinki, palerme, Bogota-->
-            <div class="flex-container">
-                <div class="conteneurs">
-                    <div id="Denver">
-                        <img class="photoPizza" src="src/Denver.jpg" alt="photo
+        <h2>NOS PIZZAS SIGNATURES</h2>
+        <!--Denver, Moscou, Stockholm, helsinki, palerme, Bogota-->
+        <div class="flex-container">
+            <div class="conteneurs">
+                <div id="Denver">
+                    <img class="photoPizza" src="src/Denver.jpg" alt="photo
                             de la pizza Denver">
-                        <div class="legende">
-                            <h4>DENVER</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>DENVER</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, roquette.</p>
                     </div>
                 </div>
-                <div class="conteneurs">
-                    <div id="Moscou">
-                        <img class="photoPizza" src="src/Moscou.jpg" alt="photo
+            </div>
+            <div class="conteneurs">
+                <div id="Moscou">
+                    <img class="photoPizza" src="src/Moscou.jpg" alt="photo
                             de la pizza Moscou">
-                        <div class="legende">
-                            <h4>MOSCOU</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                jambon, sauce piquante, merguez.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>MOSCOU</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            jambon, sauce piquante, merguez.</p>
                     </div>
                 </div>
-                <div class="conteneurs">
-                    <div id="Stockholm">
-                        <img class="photoPizza" src="src/Stockholm.jpg"
-                            alt="photo
+            </div>
+            <div class="conteneurs">
+                <div id="Stockholm">
+                    <img class="photoPizza" src="src/Stockholm.jpg" alt="photo
                             de la pizza Stockholm">
-                        <div class="legende">
-                            <h4>STOCKHOLM</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>STOCKHOLM</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, roquette.</p>
                     </div>
                 </div>
-                <div class="conteneurs">
-                    <div id="Palerme">
-                        <img class="photoPizza" src="src/Palerme.jpg" alt="photo
+            </div>
+            <div class="conteneurs">
+                <div id="Palerme">
+                    <img class="photoPizza" src="src/Palerme.jpg" alt="photo
                             de la pizza Palerme">
-                        <div class="legende">
-                            <h4>PALERME</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, roquette.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>PALERME</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, roquette.</p>
                     </div>
                 </div>
-                <div class="conteneurs">
-                    <div id="Bogota">
-                        <img class="photoPizza" src="src/Bogota.jpg" alt="photo
+            </div>
+            <div class="conteneurs">
+                <div id="Bogota">
+                    <img class="photoPizza" src="src/Bogota.jpg" alt="photo
                             de la pizza Bogota">
-                        <div class="legende">
-                            <h4>BOGOTA</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, poulet, ananas.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>BOGOTA</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, poulet, ananas.</p>
                     </div>
                 </div>
-                <div class="conteneurs">
-                    <div id="Helsinki">
-                        <img class="photoPizza" src="src/Helsinki.jpg"
-                            alt="photo
+            </div>
+            <div class="conteneurs">
+                <div id="Helsinki">
+                    <img class="photoPizza" src="src/Helsinki.jpg" alt="photo
 
                             de la pizza Helsinki">
-                        <div class="legende">
-                            <h4>HELSINKI</h4>
-                            <p class="ingredients">Ingrédients :</p>
-                            <p class="listeingredients">Sauce tomate, mozarella,
-                                buratta, speck, sauce piquante, lait de coco,
-                                poulet.</p>
-                        </div>
+                    <div class="legende">
+                        <h4>HELSINKI</h4>
+                        <p class="ingredients">Ingrédients :</p>
+                        <p class="listeingredients">Sauce tomate, mozarella,
+                            buratta, speck, sauce piquante, lait de coco,
+                            poulet.</p>
                     </div>
                 </div>
             </div>
+        </div>
         <div id="selection-aleatoire">
             <p id="professeur-pizza">LAISSE LE PROFESSEUR CHOISIR TA PIZZA</p>
             <div id="container-professeur">
-                <img id="image-selection" src="src/Elprofessor.jpg"
-                    alt="Photo du Professeur">
+                <img id="image-selection" src="src/Elprofessor.jpg" alt="Photo du Professeur">
                 <div id="conteneur-prenom">
                     <div id="prenom"></div>
                     <button id="button-professeur">Je fais confiance au
@@ -286,85 +254,84 @@
 
         </div>
     </div>
-        <div id="container_boissons">
-            <div id="vins">
-                <h2>Nos vins :</h2>
-                <ul>
-                    <li>Bardolino rosé 75cl</li>
-                    <li>Bardolino rosé 37,5cl</li>
-                    <li>Chianti (rouge) 37,5cl</li>
-                    <li>Chianti (rouge) 37,5cl</li>
-                    <li>Chianti (rouge) 37,5cl</li>
-                    <li>Ambrusco Regiano Roso 20cl</li>
-                </ul>
-            </div>
-
-            <div id="boissons">
-                <h2>Nos boissons :</h2>
-                <ul>
-                    <li>Soda 33cl</li>
-                    <li>San Pellegrino 50cl</li>
-                    <li>San Pellegrino 1L</li>
-                    <li>Limonade artisanales<br> ABBONDIO 27,5cl</li>
-                    <li>Thés artisanales<br> ABBONDIO 27,5cl</li>
-                    <li>Café</li>
-                </ul>
-            </div>
-            <div id="desserts">
-                <h2>Nos desserts :</h2>
-                <ul>
-                    <li>Tiramisu traditionnel</li>
-                    <li>Tiramisu au spéculos</li>
-                    <li>Mousse au chocolat maison</li>
-                    <li>Panna Cotta - Fruits rouges</li>
-                    <li>Panna Cotta - Caramel</li>
-                    <li>Eclair au chocolat</li>
-                </ul>
-            </div>
+    <div id="container_boissons">
+        <div id="vins">
+            <h2>Nos vins :</h2>
+            <ul>
+                <li>Bardolino rosé 75cl</li>
+                <li>Bardolino rosé 37,5cl</li>
+                <li>Chianti (rouge) 37,5cl</li>
+                <li>Chianti (rouge) 37,5cl</li>
+                <li>Chianti (rouge) 37,5cl</li>
+                <li>Ambrusco Regiano Roso 20cl</li>
+            </ul>
         </div>
-        <section id="mapForm">
-            <div id="maps">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0613629677364!2d-0.5613814844633095!3d44.840683679098554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de577d073%3A0x17a273425b1e48b9!2sPl.%20de%20Stalingrad%2C%2033100%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1632901047191!5m2!1sfr!2sfr"
-                    width="400" height="300" style="border:0;"
-                    allowfullscreen="" loading="lazy"></iframe>
-            </div>
 
-            <form id="contactForm" method="post" action="">
-                <h2>Contactez nous</h2>
-                <label for="name">Nom:</label>
-                <input type="text" id="lastName" name="lastName" value="" />
-                <label for="name">Prénom:</label>
-                <input type="text" id="firstName" name="firstName" value="" />
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" value="">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <input id="button" type="submit" value="Submit" />
-            </form>
-        </section>
-        <footer>
-            <div id="mentions-legales">
-                <img id="logofooter" src="https://i.ibb.co/Z6w3Qy9/logo.jpg"
-                    alt="Logo de la casa de pizza" />
-                <p>Mentions légales | Politique de confidentialité</p>
-            </div>
-            <div id="adresse">
-                <h3>ADRESSE</h3>
-                <p>3, Place Stalingrad</p>
-                <p>33100 Bordeaux Bastide</p>
-                <p>Arrêt TRAM A Stalingrad</p>
-                <p>Téléphone : 05 56 32 28 44</p>
-            </div>
-            <div id="horaires">
-                <h3>HORAIRES</h3>
-                <p>Durant le couvre-feu vous pouvez commander :</p>
-                <p>Lundi au Vendredi : 11h15 - 14h00 / 17h15 - 20h30.</p>
-                <p>Samedi : 17h15 - 20h30.</p>
-                <p>Du lundi au samedi nous vous livrons entre 19h30 et
-                    21h00.</p>
-            </div>
-        </footer>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
+        <div id="boissons">
+            <h2>Nos boissons :</h2>
+            <ul>
+                <li>Soda 33cl</li>
+                <li>San Pellegrino 50cl</li>
+                <li>San Pellegrino 1L</li>
+                <li>Limonade artisanales<br> ABBONDIO 27,5cl</li>
+                <li>Thés artisanales<br> ABBONDIO 27,5cl</li>
+                <li>Café</li>
+            </ul>
+        </div>
+        <div id="desserts">
+            <h2>Nos desserts :</h2>
+            <ul>
+                <li>Tiramisu traditionnel</li>
+                <li>Tiramisu au spéculos</li>
+                <li>Mousse au chocolat maison</li>
+                <li>Panna Cotta - Fruits rouges</li>
+                <li>Panna Cotta - Caramel</li>
+                <li>Eclair au chocolat</li>
+            </ul>
+        </div>
+    </div>
+    <section id="mapForm">
+        <div id="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0613629677364!2d-0.5613814844633095!3d44.840683679098554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de577d073%3A0x17a273425b1e48b9!2sPl.%20de%20Stalingrad%2C%2033100%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1632901047191!5m2!1sfr!2sfr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <form id="contactForm" method="post" action="">
+            <h2>Contactez nous</h2>
+            <label for="name">Nom:</label>
+            <input type="text" id="lastName" name="lastName" value="" />
+            <label for="name">Prénom:</label>
+            <input type="text" id="firstName" name="firstName" value="" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input id="button" type="submit" value="Submit" />
+        </form>
+    </section>
+    <footer>
+        <div id="mentions-legales">
+            <img id="logofooter" src="https://i.ibb.co/Z6w3Qy9/logo.jpg" alt="Logo de la casa de pizza" />
+            <p>Mentions légales | Politique de confidentialité</p>
+        </div>
+        <div id="adresse">
+            <h3>ADRESSE</h3>
+            <p>3, Place Stalingrad</p>
+            <p>33100 Bordeaux Bastide</p>
+            <p>Arrêt TRAM A Stalingrad</p>
+            <p>Téléphone : 05 56 32 28 44</p>
+        </div>
+        <div id="horaires">
+            <h3>HORAIRES</h3>
+            <p>Durant le couvre-feu vous pouvez commander :</p>
+            <p>Lundi au Vendredi : 11h15 - 14h00 / 17h15 - 20h30.</p>
+            <p>Samedi : 17h15 - 20h30.</p>
+            <p>Du lundi au samedi nous vous livrons entre 19h30 et
+                21h00.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>
