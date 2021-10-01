@@ -17,7 +17,7 @@ h1 {
 
 h2 {
   font-family: 'Coluna Rounded', sans-serif;
-  margin-top: 40px;
+  margin: 40px 0;
   color: #b20201;
   font-size: 2em
 }
@@ -94,7 +94,21 @@ strong {
   justify-content: center;
 }
 
-hr {
+.title_white{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 25px;
+}
+
+.title_white h2{
+  color: white;
+  font-size: 5em;
+  margin: 15px 20px 0 20px
+}
+
+hr{
   width: 15%;
   color: white;
   margin: 1px;
@@ -117,6 +131,11 @@ hr {
 
 }
 
+.history_text > h3{
+  font-size: 2em;
+  margin: 25px;
+}
+
 .text {
   width: 600px;
 }
@@ -134,33 +153,14 @@ hr {
   align-items: center;
 }
 
-.title_menu{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.title_menu h2{
-  color: white;
-  font-size: 5em;
-  margin: 15px 20px 0 20px
-}
-
-.title_menu hr{
-  width: 15%;
-  color: white;
-  margin: 1px;
-}
-
 .flex-container {
   display: flex;
-  width: 1100px;
+  width: 1000px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.flex-container div {
+.flex-container > div {
   margin: 25px 0;
 }
 
@@ -178,10 +178,10 @@ hr {
 
 .legende {
   position: relative;
-  bottom: 329px;
+  bottom: 304px;
   width: 300px;
   /*background-color: rgba(139, 137, 137, 0.8);*/
-  background-color: rgba(121, 120, 120, 0.61);
+  background-color: rgba(17, 18, 12, 0.75);
   visibility: hidden;
   height: 300px;
   display: flex;
@@ -195,7 +195,7 @@ hr {
 }
 
 .ingredients {
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: "Lato", sans-serif;
   justify-content: center;
 }
@@ -210,13 +210,12 @@ hr {
 .photoPizza {
   width: 300px;
   height: 300px;
-  border: 1px solid red;
 }
 
 #container_boissons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: baseline;
   flex-wrap: wrap;
   padding: 50px 0;
 }
@@ -234,6 +233,7 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 300px;
+  text-align: center;
 }
 
 #mapForm {
@@ -241,11 +241,12 @@ hr {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
+  margin: 25px 0;
 }
 
 iframe {
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
 }
 
 #contactForm {
@@ -258,24 +259,26 @@ iframe {
 
 input {
   font-family: "Lato", sans-serif;
+  margin: 5px 0;
 }
 
 label {
   color: white;
+  margin: 5px 0;
 }
 
 #button {
   width: 80px;
   color: black;
   font-family: "Lato", sans-serif;
-  margin-top: 5px;
+  margin: 10px 0;
   align-self: center;
 }
 
 textarea {
   height: 50px;
   font-family: "Lato", sans-serif;
-
+  margin: 5px 0;
 }
 
 footer {
@@ -310,9 +313,7 @@ footer {
     top: 0;
     width: 100vw;
     height: 100vh;
-
     z-index: 99;
-
     transform-origin: 0% 0%;
     transform: translate(200%, 0);
 
@@ -363,9 +364,7 @@ footer {
     margin: 16px;
     width: 33px;
     height: 28px;
-
     z-index: 100;
-
     -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
@@ -378,15 +377,11 @@ footer {
     height: 4px;
     width: 100%;
     margin-bottom: 5px;
-
     background: #ededed;
     border-radius: 3px;
-
     z-index: 100;
-
     opacity: 1;
     left: 0;
-
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -457,17 +452,22 @@ footer {
 
   h1{
     font-size: 5em;
+    width: 310px;
   }
 
   hr{
     display: none;
   }
 
+  .title_white{
+    width: 310px;
+  }
+
   #container_history {
     flex-wrap: wrap;
   }
 
-  .history_text h2,
+  .history_text h3,
   .text {
     width: 310px;
   }
@@ -496,6 +496,7 @@ footer {
   #contactForm {
     width: 310px;
     margin: 25px 0;
+    padding: 0;
   }
 
   iframe {
