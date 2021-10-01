@@ -74,6 +74,10 @@ const arrayPizza = [
     picture: "./src/Stockholm-perso.jpg"
   },
   {
+    name: "HELSINKI",
+    picture: "./src/Helsinki-perso.jpg"
+  },
+  { 
     name: "PALERME",
     picture: "./src/Palerme-perso.jpg"
   },
@@ -82,28 +86,34 @@ const arrayPizza = [
     picture: "./src/Bogota-perso.jpg"
   }
 ]
+// On stocke une référence vers l'interval lancé
+
+let interval;
 
 button.addEventListener('click', function(){
-  setInterval(
+  // On stock le nombre de fois qu'une pizza est piochée
+  let counter = 0;
+
+  // Si un interval a déjà été lancé, on le stop
+  if (interval) {
+    clearInterval(interval);
+  }
+
+  // On lance l'interval qu'on stocke pour pouvoir l'arrêter plus tard
+  interval = setInterval(
     function() {
-      let randomNbr = Math.floor(Math.random() *12);
+
+      // Si on a pioché un pizza 15 fois, on stop l'interval
+      
+      if (counter >= 15) {
+        clearInterval(interval);
+      }
+      let randomNbr = Math.floor(Math.random() * arrayPizza.length);
       const pizza = arrayPizza[randomNbr];
       professeur.src = pizza.picture;
-      console.log(pizza);
       prenom.innerHTML = pizza.name;
-    
+      counter += 1;
     },
     200
   );
-})
-
-
-
-/*function stopTextColor() {
-  clearInterval(randomNbr);
-  // release our intervalID from the variable
-  randomNbr = null; 
-}*/
-
-
-
+});

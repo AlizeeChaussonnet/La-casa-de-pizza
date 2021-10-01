@@ -44,6 +44,9 @@ strong {
     background-color: #b20201;
     font-size: .8em;
     font-family: 'Coluna Rounded', sans-serif;
+    position: relative;
+    top: -13px;
+    padding-top: 8px;
 }
 
 hr{
@@ -471,9 +474,8 @@ footer {
 /* New CSS */
 #selection-aleatoire {
 background-color: #b20202;
-  margin-top: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+padding: 10px 25px 10px 25px;
+  
 }
 
 #professeur-pizza {
@@ -486,6 +488,7 @@ background-color: #b20202;
   height: 30px;
   font-size: 25px;
   margin-top: 50 px;
+  margin-right: 14px;
 
 }
 
