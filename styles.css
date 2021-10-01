@@ -42,9 +42,18 @@ li {
 }
 
 strong {
-  background-color: #b20201;
-  font-size: .8em;
-  font-family: 'Coluna Rounded', sans-serif;
+    background-color: #b20201;
+    font-size: .8em;
+    font-family: 'Coluna Rounded', sans-serif;
+    position: relative;
+    top: -13px;
+    padding-top: 8px;
+}
+
+hr{
+    width: 15%;
+    color: white;
+    margin: 1px;
 }
 
 #root {
@@ -211,6 +220,54 @@ hr{
   width: 300px;
   height: 300px;
 }
+
+/* Roulette */
+
+#selection-aleatoire {
+  background-color: #b20202;
+  padding: 10px 25px 10px 25px;
+  }
+  
+  #professeur-pizza {
+    font-family: 'Coluna Rounded', sans-serif;
+    font-size: 50px;
+  }
+  
+  #button-professeur {
+    font-family: 'Coluna Rounded', sans-serif;
+    height: 30px;
+    font-size: 25px;
+    margin-top: 50 px;
+    margin-right: 14px;
+  
+  }
+  
+  #image-selection {
+  
+    height: 300px;
+    width: 300px;
+    
+  }
+  #container-professeur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #conteneur-prenom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #prenom {
+      height: 60px;
+      width: 270px;
+      margin-bottom: 64px;
+      text-align: center;
+      font-family: 'Coluna Rounded', sans-serif;
+    font-size: 50px;
+      color: white;
+  }
 
 #container_boissons {
   display: flex;

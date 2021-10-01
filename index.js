@@ -31,3 +31,89 @@ contactForm.addEventListener("submit", function (event) {
   contactForm.style.justifyContent = "center";
 });
 
+// Déclaration des constantes
+const professeur = document.querySelector("#image-selection");
+const button = document.querySelector("#button-professeur")
+const prenom = document.querySelector("#prenom");
+
+const arrayPizza = [
+  {
+    name: "PROFESSEUR",
+    picture: "./src/Professeur-perso.jpg"
+  },
+  {
+    name: "TOKYO",
+    picture: "./src/Tokyo-perso.jpg"
+  },
+  {
+    name: "LISBONNE",
+    picture: "./src/Lisbonne-perso.jpg"
+  },
+  {
+    name: "BERLIN",
+    picture: "./src/Berlin-perso.jpg"
+  },
+  {
+    name: "RIO",
+    picture: "./src/Rio-perso.jpg"
+  },
+  {
+    name: "NAIROBI",
+    picture: "./src/Nairobi-perso.jpg"
+  },
+  {
+    name: "DENVER",
+    picture: "./src/Denver-perso.jpg"
+  },
+  {
+    name: "MOSCOU",
+    picture: "./src/Moscou-perso.jpg"
+  },
+  {
+    name: "STOCKHOLM",
+    picture: "./src/Stockholm-perso.jpg"
+  },
+  {
+    name: "HELSINKI",
+    picture: "./src/Helsinki-perso.jpg"
+  },
+  { 
+    name: "PALERME",
+    picture: "./src/Palerme-perso.jpg"
+  },
+  {
+    name: "BOGOTA",
+    picture: "./src/Bogota-perso.jpg"
+  }
+]
+// On stocke une référence vers l'interval lancé
+
+let interval;
+
+button.addEventListener('click', function(){
+  // On stock le nombre de fois qu'une pizza est piochée
+  let counter = 0;
+
+  // Si un interval a déjà été lancé, on le stop
+  if (interval) {
+    clearInterval(interval);
+  }
+
+  // On lance l'interval qu'on stocke pour pouvoir l'arrêter plus tard
+  interval = setInterval(
+    function() {
+
+      // Si on a pioché un pizza 15 fois, on stop l'interval
+      
+      if (counter >= 15) {
+        clearInterval(interval);
+      }
+      let randomNbr = Math.floor(Math.random() * arrayPizza.length);
+      const pizza = arrayPizza[randomNbr];
+      professeur.src = pizza.picture;
+      prenom.innerHTML = pizza.name;
+      counter += 1;
+    },
+    200
+  );
+});
