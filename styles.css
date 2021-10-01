@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+:root {
+  --color-primary: #b20201;
+}
 
+body {
   background-color: #111214;
 }
 
@@ -18,18 +21,18 @@ h1 {
 h2 {
   font-family: 'Coluna Rounded', sans-serif;
   margin: 40px 0;
-  color: #b20201;
+  color: var(--color-primary);
   font-size: 2em
 }
 
 h3 {
   font-family: 'Coluna Rounded', sans-serif;
-  color: #b20201;
+  color: var(--color-primary);
 }
 
 h4 {
   font-family: 'Coluna Rounded', sans-serif;
-  color: #b20201;
+  color: var(--color-primary);
   font-size: 2.5em;
 }
 
@@ -42,7 +45,7 @@ li {
 }
 
 strong {
-    background-color: #b20201;
+    background-color: var(--color-primary);
     font-size: .8em;
     font-family: 'Coluna Rounded', sans-serif;
     position: relative;
@@ -63,7 +66,7 @@ hr{
 }
 
 .topnav {
-  background-color: #b20202;
+  background-color: var(--color-primary);
   display: flex;
   align-items: center;
   width: 100%;
@@ -400,7 +403,7 @@ textarea {
 }
 
 footer {
-  background-color: #b20201;
+  background-color: var(--color-primary);
   color: white;
   display: flex;
   flex-wrap: wrap;
