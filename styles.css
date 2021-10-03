@@ -167,6 +167,15 @@ hr{
   align-items: center;
 }
 
+.container_unfolding{
+  display: flex;
+  align-items: baseline;
+}
+
+.unfolding{
+  display: none;
+}
+
 .flex-container {
   display: flex;
   width: 1000px;
@@ -573,15 +582,14 @@ footer {
 
   h1{
     font-size: 5em;
-    width: 310px;
   }
 
   hr{
     display: none;
   }
 
-  .title_white{
-    width: 310px;
+  .title_white h2{
+    margin: 0;
   }
 
   #container_history {
@@ -606,8 +614,38 @@ footer {
   .flex-container {
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    flex-wrap: nowrap;
+    transition: height 600ms ease-in;
   }
+
+  .unfolding{
+    display: block;
+    transform: rotate(90deg);
+    transition: all 600ms ease-in;
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+  }
+
+  .unfolding-open{
+    transform: rotate(-90deg);
+    transition: all 600ms ease-in;
+  }
+
+  .unfolding svg{
+    fill: white;
+    width: 30px;
+    height: 30px;
+  }
+
+  .flex-container-animation{
+    overflow: hidden;
+    height: 2100px;
+    transition: height 600ms ease-in;
+  }               
 
   #professeur-pizza{
     text-align: center;

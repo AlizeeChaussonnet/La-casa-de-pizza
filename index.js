@@ -132,3 +132,20 @@ function scrollToHistory() {
 }
 // 
 
+
+// Menu deroulant pizza mobile
+let unfoldingC = document.querySelector(`#unfolding_classiques`);
+let unfoldingS = document.querySelector(`#unfolding_signatures`);
+
+unfoldingC.addEventListener('click', function(){
+  let flexContainer = document.querySelector(`#container-classique`);
+  flexContainer.classList.toggle("flex-container-animation");
+  unfoldingC.classList.toggle("unfolding-open");
+});
+
+unfoldingS.addEventListener('click', function(){
+  let flexContainer = document.querySelector(`#container-signatures`);
+  flexContainer.classList.toggle("flex-container-animation");
+  unfoldingS.classList.toggle("unfolding-open")
+});
+
