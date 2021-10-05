@@ -153,6 +153,9 @@ hr{
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 100px 0;
+  background-image: url("./src/impactBalles.png");
+  background-repeat: no-repeat;
+  background-size: 440px;
 }
 
 #container_history div {
@@ -187,6 +190,10 @@ hr{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("./src/impactBalles.png");
+  background-repeat: no-repeat;
+  background-size: 440px;
+  background-position: 107% -2%;
 }
 
 .container_unfolding{
@@ -225,8 +232,8 @@ hr{
   position: relative;
   bottom: 304px;
   width: 300px;
-  /*background-color: rgba(139, 137, 137, 0.8);*/
   background-color: rgba(17, 18, 12, 0.75);
+  border-radius: 100%;
   visibility: hidden;
   height: 300px;
   display: flex;
@@ -282,8 +289,8 @@ hr{
 		opacity: 1;
 	}
 	100% {
-		width: 150%;
-		height: 150%;
+		width: 110%;
+		height: 110%;
 		opacity: 0;
 	}
 }
@@ -382,6 +389,10 @@ hr{
   align-items: baseline;
   flex-wrap: wrap;
   padding: 50px 0;
+  background-image: url("./src/impactBalles.png");
+  background-repeat: no-repeat;
+  background-size: 440px;
+  background-position: 25%
 }
 
 #container_boissons div {
@@ -405,8 +416,12 @@ hr{
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  margin: 25px 0;
-  
+  margin-top: 25px;
+  background-image: url("./src/douilles2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  padding-bottom: 100px;
 }
 
 iframe {
@@ -470,7 +485,7 @@ footer {
 }
 
 #logofooter {
-  margin-top: 37px;
+  margin-top: 25px;
   margin-left: 48px;
 }
 
