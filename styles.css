@@ -339,6 +339,7 @@ hr{
     border: 2px solid var(--color-second);
     border-radius: 50px;
     color: white;
+    cursor: pointer;
   }
 
   #button-professeur:hover{
@@ -444,6 +445,7 @@ label {
   border: solid 2px var(--color-primary);
   background-color: var(--color-second);
   color: white;
+  cursor: pointer;
 }
 
 #button:hover{
