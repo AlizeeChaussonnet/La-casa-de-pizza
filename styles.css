@@ -171,7 +171,7 @@ hr{
 
 .history_text > h3{
   font-size: 2em;
-  margin: 25px;
+  margin: 25px 0;
 }
 
 .text {
@@ -483,16 +483,46 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 40px;
 }
 
-#logofooter {
-  margin-top: 25px;
-  margin-left: 48px;
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#mentions-legales{
+  align-items: center;
+  text-align: center;
+}
+
+/* -------------------Responsive------------------------*/
+
+@media only screen and (max-width: 1150px){
+  .flex-container {
+    width: auto;
+  }
+  #container_history{
+    background-size: 350px;
+  }
+  .history_img{
+    padding: 25px;
+  }
+  .main-container{
+    background-size: 300px;
+  }
+  #container_boissons{
+    background-size: 250px;
+  }
+  iframe{
+    width: auto;
+  }
 }
 
 
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 800px) {
 
   /* hide classic menu */
   #topnav_menu {
@@ -659,11 +689,7 @@ footer {
 
   #container_history {
     flex-wrap: wrap;
-  }
-
-  .history_text h3,
-  .text {
-    width: 310px;
+    background-size: 250px;
   }
 
   #container_history div img {
@@ -674,6 +700,7 @@ footer {
 
   .main-container {
     flex-direction: column;
+    background-image: none;
   }
 
   .flex-container {
@@ -724,6 +751,10 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+  #container_boissons{
+    background-size: 250px;
+    background-position: bottom right;
+  }
 
   #prenom, #button-professeur, #professeur-pizza{
     margin: 25px 0;
@@ -743,13 +774,35 @@ footer {
   }
 
   iframe {
-    width: 350px;
     height: 300px;
-    
   }
 
-  footer div {
-    width: 310px;
-  }
+}
 
+@media only screen and (max-width: 500px){
+  h1 {
+    font-size: 4em;
+  }
+  .title_white h2{
+    font-size: 4em;
+  }
+  .history_text h3,
+  .text {
+    width: auto;
+    padding: 0 10px;
+  }
+  #container_history {
+    text-align: center;
+  }
+  .history_img{
+    padding: 25px 0;
+  }
+  #container_boissons{
+    background-size: 250px;
+    background-position: -100px top;
+  }
+  #mapForm{
+    background-size: 150%;
+  }
+  
 }
