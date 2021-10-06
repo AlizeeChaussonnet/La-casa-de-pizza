@@ -77,6 +77,7 @@ hr{
   font-family: var(--font-primary);
   font-size: 25px;
   z-index: 999;
+  box-shadow: 0em 0em 1em 0.5em black;
 }
 
 #topnav_menu {
@@ -484,6 +485,7 @@ footer {
   justify-content: space-around;
   width: 100%;
   padding: 20px 40px;
+  box-shadow: 0px -5px 11px black;
 }
 
 footer div {
