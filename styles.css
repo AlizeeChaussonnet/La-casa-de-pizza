@@ -694,6 +694,10 @@ footer div {
     background-size: 250px;
   }
 
+  .text{
+    width: 450px;
+  }
+
   #container_history div img {
     width: 310px;
     height: 350px;
@@ -772,7 +776,6 @@ footer div {
     width: 310px;
     margin: 25px 0;
     padding: 0;
-    
   }
 
   iframe {
