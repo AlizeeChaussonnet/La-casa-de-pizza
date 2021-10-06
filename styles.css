@@ -784,6 +784,35 @@ footer div {
 
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b20201; /* Set a background color */
+  color: #111214; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  fill: white;
+}
+
+#myBtn svg {
+width: 25px;
+transform: rotate(-90deg);
+
+}
+
+
+#myBtn:hover {
+  background-color: white;
+  fill: var(--color-second); 
+}
+
 @media only screen and (max-width: 500px){
   h1 {
     font-size: 4em;
