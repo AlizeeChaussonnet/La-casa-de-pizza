@@ -740,7 +740,7 @@ footer div {
   }    
   
   #selection-aleatoire{
-    padding: 0;
+    padding: 10px;
   }
 
   #professeur-pizza{
@@ -796,6 +796,9 @@ footer div {
   }
   .history_img{
     padding: 25px 0;
+  }
+  #conteneur-prenom{
+    padding: 0;
   }
   #container_boissons{
     background-size: 250px;
